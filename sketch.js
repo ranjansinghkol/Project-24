@@ -72,7 +72,7 @@ function draw() {
 
 function keyPressed() {
   if (keyCode == RIGHT_ARROW) {
-    arrow = new Arrow(155, 137);
+    arrow = new Arrow(330, 277, 75, 25, playerArcher.angle);
     arrow.trajectory = [];
     Matter.Body.setAngle(arrow.body, playerArcher.angle);
     arrows.push(arrow);
